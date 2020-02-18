@@ -10,7 +10,7 @@ const ProductDetailsPage = (props) => {
       const productDetail = useSelector(store => store.productDetailsReducer.productsDetails)
       const token = localStorage.getItem('access_token');
       if(!token){
-          window.location.href="/login"
+          window.location.href="/"
       }
     return ( 
         <div className="container mt-5">
